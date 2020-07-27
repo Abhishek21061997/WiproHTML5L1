@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Video of the week</title>
+  </head>
+<style>
+	
+      body {
+         background-image: url(https://media.glassdoor.com/l/1d/68/eb/3a/bangalore-sarjapur.jpg);
+         background-size: 90%;
+         background-repeat: no-repeat;
+      }
+           
+ h1 {
+                font-family:  Arial, Helvetica, sans-serif;
+                color: #3297b7;
+                font-size: 3vw;
+                margin-top: 0;
+        }
+
+button {
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+</style>
+
+  <body>
+    <section style="text-align: center">
+      <img
+        src="https://i.dlpng.com/static/png/1195195-youtube-play-button-logo-computer-icons-youtube-icon-app-logo-png-youtube-png-900_520_preview.png"
+        style="display: inline"
+        alt="Video"
+        width="50"
+	height="50"
+      />
+      <h1 style="display: inline">Awesome Online videos</h1>
+    </section>
+    <section>
+      <div style="text-align:center">
+        <video id="V1" width="420">
+          <source
+            src="Jim Halpert - Going from the office drunk.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <br /><br />
+        <button onclick="play()">Play Video</button>
+        <button onclick="pause()">Pause Video</button>
+      </div>
+
+      <script>
+        var myVideo = document.getElementById("V1");
+        function play() {
+          if (myVideo.paused) myVideo.play();
+        }
+        function pause() {
+          if (myVideo.play) myVideo.pause();
+        }
+      </script>
+    </section>
+  </body>
+</html>
